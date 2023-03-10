@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Phudu:wght@500&family=Poppins:ital,wght@1,200&family=Roboto:ital,wght@1,300&family=Shantell+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Phudu:wght@500&display=swap');
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #0466c8;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Phudu', cursive; 
+
+    --fonte-secundaria: 'Oswald', sans-serif;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    box-sizing: border-box;
+    background-image: url("/assets/boteco.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+   
+
+}
+.img{
+    width: 1px;
+    height: 1px;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    padding: 3%;
+}
+.image{
+    width: 8%;
+    height: 8%;
+}
+.cabecalho__intro{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: var(--cor-secundaria);
+}
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+.apresentacao__introducao__titulo{
+    font-family: var(--fonte-secundaria);
+    font-size: 3.75rem;
+    color: var(--cor-secundaria);
+}
+
+.TituloDestaque{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__introducao__paragrafo{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+    padding: 1%;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__conteudo{
+    font-family: var(--fonte-secundaria);
+    text-decoration: none;
+    border: 2px solid var(--cor-terciaria);
+    width: 15%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 1% 2%;
+    color: var(--cor-secundaria);
+}
+.apresentacao__conteudo:hover{
+    background-color: var(--cor-hover);
+}
+.rodape{
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+}
+@media (max-width: 510px){
+    .image{
+        width: 40%;
+        height: 40%;
+    }
+    .cabecalho{
+        gap: 2vh;
+        padding: 15%;
+    }
+    .cabecalho__intro{
+        text-align: center;
+
+    }
+    .apresentacao{
+        gap: 5vh;
+    }
+    .apresentacao__introducao__titulo{
+        text-align: center;
+    }
+    .apresentacao__introducao__paragrafo{
+        text-align: center;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}

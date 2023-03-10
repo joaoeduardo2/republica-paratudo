@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Phudu:wght@500&family=Poppins:ital,wght@1,200&family=Roboto:ital,wght@1,300&family=Shantell+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Phudu:wght@500&display=swap');
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #0466c8;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Phudu', cursive; 
+
+    --fonte-secundaria: 'Oswald', sans-serif;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("/assets/boteco.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    
+}
+.cabecalho{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+#menu{
+    display: none;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    width: 100vw;
+    text-align: center;
+    padding: 4vh;
+    cursor: pointer;
+}
+.cabecalho__menu__menu{
+    display: flex;
+    gap: 2vw;
+}
+.cabecalho__menu__links:visited{
+    color:var(--cor-terciaria);
+}
+.cabecalho__menu__links{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: var(--cor-primaria);
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.cabecalho__menu__link2{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+.apresentacao__menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 2%;
+    
+}
+.borda{
+    border: 2px solid var(--cor-terciaria);
+    width: 75vw;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+    padding: 4%;
+    
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+.borda__2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6vh;
+}
+.apresentacao__back{
+    font-family: var(--fonte-primaria);
+    font-size: 6vw;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+.apresentacao__titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 3.125vw;
+    color: var(--cor-terciaria);
+}
+.apresentacao{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.apresentacao__paragrafo{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    width:70vw;
+    color: var(--cor-secundaria);
+    text-align: center;
+    
+}
+.linha{
+    width: 50vw;
+    border: none;
+    border-top: 1px solid var(--cor-terciaria);
+}
+.rodape__endereco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.apresentacao__fim{
+    
+    font-family: var(--fonte-primaria);
+    font-size: 1.875rem;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    border: 2px solid var(--cor-terciaria);
+    width: 18vw;
+    padding: 2% 0%;
+    text-align: center;
+    border-radius: 10px;
+}
+.apresentacao__fim:hover{
+    background-color: var(--cor-hover);
+}
+@media (max-width: 950px){
+    #menu{
+        display: flex;
+        justify-content: center;
+        background-color: var(--cor-primaria);
+    }
+    .cabecalho{
+        
+        padding: 0% 0% 5%;
+    }
+    .cabecalho__menu{
+        text-align: center;
+    }
+    .cabecalho__menu__menu{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .cabecalho__menu__link{
+        background-color: var(--cor-primaria);
+        width: 100vw;
+        padding: 1vh;
+    }
+    .cabecalho__menu__link2{
+        text-align: center;
+    }
+    .borda{
+        gap: 5vh;
+    }
+    .borda__2{
+        gap: 3vh;
+    }
+    .cabecalho__menu{
+        display: none;
+    }
+    .apresentacao__back{
+        text-align: center;
+        font-size: 15vw;
+    }
+    .apresentacao__titulo{
+        text-align: center;
+        font-size: 10vw;
+    }
+    .apresentacao__paragrafo{
+        text-align: center;
+    }
+    .cabecalho__menu__link{
+        text-align: center;
+    }
+    .apresentacao__fim{
+        width: 40vw;
+    }
+}
